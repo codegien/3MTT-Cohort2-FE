@@ -3,24 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .hero {
-            background-color: rgb(239, 159, 40); 
-            display:flex;  
-            justify-content: center; 
-            align-items: center
-        }
-         .hero_copy {
-            width: 40%; 
-            margin: 10px
-        }
-        .hero >div >button{
-           padding: 20px; 
-           background-color:black;  
-           color:whitesmoke; 
-           border-radius:32px
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
     <header></header>
@@ -29,29 +12,40 @@
             <div class="hero_copy">
 
                 <h1 style="font-size:80px">SAY NO MORE! ROCK IN STYLE</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sapiente sunt qui obcaecati impedit consequuntur eos inventore possimus modi tempora?</p>
+                <p class="hero_text forbg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sapiente sunt qui obcaecati impedit consequuntur eos inventore possimus modi tempora?</p>
                 <button >Shop Now</button>
             </div>
             <div>
                 <img src="./assets/image/heroimg.jpg" alt="girl in style" width="300">
             </div>
         </section>
-        <section>
+        <section class="services">
             <h2>Our Service</h2>
-            <div>
-                <h4>Embrodry</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, amet!</p>
-                <button>See Samples</button>
-            </div>
-            <div>
-                <h4>Stoning</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, amet!</p>
-                <button>See Samples</button>
-            </div>
-            <div>
-                <h4>Weaving</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, amet!</p>
-                <button>See Samples</button>
+            <div class="service_items">
+                <div>
+                    <h4>Embrodry</h4>
+                    <div>
+
+                        <p id="service_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, amet!</p>
+                    </div>
+                    <button>See Samples</button>
+                </div>
+                <div>
+                    <h4>Stoning</h4>
+                    <div>
+
+                        <p id="service_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, amet!</p>
+                    </div>
+                    <button>See Samples</button>
+                </div>
+                <div>
+                    <h4>Weaving</h4>
+                    <div>
+
+                        <p id="service_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, amet!</p>
+                    </div>
+                    <button>See Samples</button>
+                </div>
             </div>
         </section>
         <section>

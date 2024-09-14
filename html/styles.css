@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+:root {
+    --brandyellow: rgb(239, 159, 40);
+    --headertext: 32px;
+    --scrollbar-thumb-color: whitesmoke;
+    --text-color: #1d1b1b;
+}
+
+
+html {
+    height: 100%;
+    background-color: var(--scrollbar-thumb-color);
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    color: var(--text-color);
+    width: 100%;
+    /* text-align: center; */
+}
+
+
+.hero {
+    background-color: var(--brandyellow);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.hero_copy {
+    width: 40%;
+    margin: 10px;
+    /* color: rgb(239, 159, 40); */
+}
+
+button {
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 32px
+}
+
+p {
+    color: purple
+}
+
+.hero_text {
+    color: rgb(23, 22, 22);
+    font-size: 34px;
+}
+
+#service_text {
+    color: rgb(43, 98, 226)
+}
+.services {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 20vh 0;
+    
+}
+.services > h2 {
+    font-size: var(--headertext);
+}
+
+.service_items {
+    text-align: center;
+    display: flex;
+    margin: 5vh 0;
+    justify-content: space-between;
+}
+
+.service_items>div {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    background-color: rgb(218, 221, 224);
+    border: .2px solid rgb(165, 164, 164);
+    margin: 10px;
+    padding: 2vmin;
+    border-radius: 8px;
+
+}
+
+ #service_text{
+    line-height: 4;
+ }
