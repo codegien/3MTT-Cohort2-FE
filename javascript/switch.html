@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <h2>Book Library</h2>
+    <select name="subject" id="selectedSubject">
+        <option value="-"> ---- </option>
+        <option value="mathematics">Mathematics</option>
+        <option value="science">Science</option>
+        <option value="economics">Economics</option>
+        <option value="chemistry">Chemistry</option>
+    </select>
+    <br />
+    <button onclick="verifyBook()">Done</button>
+    <script type="text/javascript">
+        function verifyBook(){
+            var book =  document.getElementById("selectedSubject").value
+            document.write("Entering into an switch block...");
+            switch (book) {
+                case "mathematics": document.write("Mathematics book selected"); 
+                break;
+                case "sciences": document.write("Sciences book selected");
+                break;
+                case "economics": document.write("Economics book selected");
+                break;
+                case "chemistry": document.write("Chemistry book selected");
+                break;
+
+                default: document.write("no book has been selected");
+            }
+            }
+    </script>
+</body>
+</html>

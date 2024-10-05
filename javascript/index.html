@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <style>
+        span {
+            color: rgb(74, 3, 149);
+        }
+    </style>
+</head>
+<body>
+    <h1>Java Script</h1>
+    <script type="text/javascript">
+        //DATA TYPES
+        //Primitive: boolean, number, string
+    //VARIABLE INITIALIZATION
+    //1. Using var
+    //2. Using let
+    //3. Using const
+
+    var first_name =  "Johny";
+    var last_name =  "Walker";
+    var full_name = first_name + " " + last_name
+    document.write(`<h1>Welcome <span>${full_name}</span></h1>`);
+    
+    let formal_age =  Number(prompt("Enter your age"));
+    console.log(typeof(formal_age));
+    document.write(`Your formal age is ${formal_age}, you are eligible for grant`)
+    
+    //Number
+    //Operators
+    current_age = formal_age + 1
+    document.write(`<br>Your current age is ${current_age}, you are eligible for grant`)
+
+    //Comparison operators
+    // Equal == or ===
+    // Not equal !=
+    // Greater than >
+    // Less than <
+    // Greater than or equalto >=
+    // Less than or equalto <=
+
+    var a = 10;
+    var b = 20;
+    var linebreak = "<br />";
+    document.write(linebreak);
+    document.write("(a == b) => "); 
+    let result = (a == b); 
+    document.write(result); 
+    document.write(linebreak);
+
+    document.write("(a < b) => "); 
+    result = (a < b); 
+    document.write(result); 
+
+    document.write(linebreak);
+    document.write("(a > b) => "); 
+    result = (a > b); 
+    document.write(result); 
+    document.write(linebreak);
+
+    //CONDITIONAL OPERATOR
+    //conditional operator (?:)
+    // Condition is true? Then value X : Otherwise value Y
+    // is rainy? tell Josh: "go with umbrella" : tell Josh: "go with sun shade";
+
+    document.write("((a > b)? 100 : 200) gives )")
+    result = (a<b)? 100 : 200
+    document.write(result);
+
+    //CONTROL STATEMENT
+    //if statement
+    //if (a>b) {console.log("True")}
+  
+    if (a>b) {
+        console.log("True")
+        } else {
+         console.log("False")
+        }
+    let isVerified = true;
+    let hasPassport = true;
+    let hasBVN = true;
+    let hasUtility = false;
+    if (hasPassport==true && hasBVN==true && hasUtility==true) {
+        console.log("User verification successful")
+        } else if (hasPassport == false ) {
+        console.log("User verification  at tier 2")
+        } else if (hasPassport == true && hasBVN == true ) {
+        console.log("User verification  at tier 3")
+    } else {
+         console.log("User verfication failed")
+        }
+
+    </script>
+</body>
+</html>
