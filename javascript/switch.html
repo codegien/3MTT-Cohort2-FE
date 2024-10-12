@@ -16,6 +16,13 @@
     </select>
     <br />
     <button onclick="verifyBook()">Done</button>
+    <br/>
+    <hr>
+    <br/>
+    <ul id="list">
+       
+    </ul>
+
     <script type="text/javascript">
         function verifyBook(){
             var book =  document.getElementById("selectedSubject").value
@@ -33,6 +40,60 @@
                 default: document.write("no book has been selected");
             }
             }
+
+            // ITERATION STATEMENT
+            // For loop
+            // for (initialization expression; test condition; update expression){
+                //body of the 'for' loop;
+             //}
+           
+            const list = document.getElementById("list");    
+             for (let i= 1; i < 6; i++){
+                console.log(i);
+                let li = document.createElement("li");
+                li.textContent = `Round ${i}`;
+                list.appendChild(li);
+             }
+
+
+             ////////////////////
+              const fruits = ["Mango", "Apple", "Android", "Pawpaw"];
+                for (let i = 0; i < fruits.length; i++) {
+                    console.log(i);
+                    let li = document.createElement("li");
+                    li.textContent = `Round ${i}`;
+                    li.textContent = `${fruits[i]}`;
+                    list.appendChild(li);
+                }
+                //forEach
+                fruits.forEach((item) => {
+                    let li = document.createElement("li");
+                    li.textContent = `${item}}`;
+                    list.appendChild(li);
+                })
+            //WHILE
+            let noStudent = 0;
+            while (noStudent< 4) {
+                    console.log("from student while", noStudent);
+                    noStudent ++;
+                }
+
+            //DO WHILE
+            let noOfLogin = 0;
+            do {
+                console.log(noOfLogin)
+                noOfLogin --;
+            } while (noOfLogin > 0);
+
+            /// breaks
+            function addNumber(){
+                let a = 5; 
+                let b = 2;
+                result = a + b;
+                return result;
+            }
+            document.write(`${addNumber() }`);
     </script>
+   
 </body>
 </html>
