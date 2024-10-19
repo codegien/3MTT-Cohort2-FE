@@ -4,8 +4,8 @@ function sayHello() {
 	console.log("Hello");
 	return "Hello";
 }
-// let greet = document.getElementById("test");
-// greet.addEventListener("click", sayHello);
+let greet = document.getElementById("test");
+greet.addEventListener("click", sayHello);
 
 // function as variable
 var makeSum = function () {
@@ -13,3 +13,10 @@ var makeSum = function () {
 	document.write(`2 + 3 = ${result}`);
 	return result;
 };
+
+//const makeSum2 =() => {};
+// console.log(
+// 	(() => {
+// 		return "Hello from Annonymous function";
+// 	})()
+// );
